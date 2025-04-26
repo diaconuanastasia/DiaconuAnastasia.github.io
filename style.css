@@ -1,0 +1,86 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f9fafb; /* gri albicios foarte deschis */
+    color: #333;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+.header {
+    background-color: #b3c7f9; /* albastru pal */
+    padding: 20px;
+    text-align: center;
+    color: #1d3557;
+}
+
+.main-content {
+    display: flex;
+    flex: 1;
+    padding: 20px;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.stanga, .dreapta {
+    flex: 1;
+    min-width: 300px;
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.stanga {
+    background-color: #e0f7fa; /* albastru foarte pal */
+}
+
+.dreapta {
+    background-color: #f1f8e9; /* verde pal */
+}
+
+.dreapta ul {
+    list-style: none;
+    padding: 0;
+}
+
+.dreapta li {
+    margin-bottom: 10px;
+}
+
+.dreapta a {
+    text-decoration: none;
+    color: #2e7d32; /* verde închis */
+    font-weight: bold;
+    font-size: 18px;
+    transition: color 0.3s;
+}
+
+.dreapta a:hover {
+    color: #1b5e20;
+}
+
+.footer {
+    background-color: #b3c7f9;
+    text-align: center;
+    padding: 15px;
+    font-size: 14px;
+    color: #1d3557;
+    margin-top: auto;
+}
+
+/* Responsivitate */
+@media (max-width: 768px) {
+    .main-content {
+        flex-direction: column;
+    }
+}
